@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import Home from './components/Home';
 import CreateAssignment from './components/CreateAssignment'
 import Classroom from './components/Classroom'
+import Directions from './components/Directions'
 import './styles/App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" exact component={Home}/>
         <Route path="/CreateAssignment" exact component={CreateAssignment}/>
         <Route path="/Classroom" exact component={Classroom}/>
+        <Route path="/Directions" exact component={Directions}/>
       </div>
     </Router>
     

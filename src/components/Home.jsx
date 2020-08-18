@@ -13,6 +13,7 @@ const Home = () => {
       <p className="homeText">Simply click the link below to create a lesson, choose an 'instructor' and a 'classroom' and you're set!</p>
       <p className="homeText">Send out the link to families and your scholars can listen to step by step directions while you are busy teaching small groups!</p>
       <button onClick={newAssignment}>Click to Begin</button>
+      <img id="homeBackground" src="7462.jpg"></img>
     </div>
   )
 }

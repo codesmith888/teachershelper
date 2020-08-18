@@ -34,8 +34,8 @@ body {
   font-size: 28px;
 }
 
-#home {
-  background-image: url("/7462.jpg");
+#homeBackground {
+  background-color: #BEC6C3;
 }
 
 

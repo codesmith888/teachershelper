@@ -1,16 +1,33 @@
-query assignmentsByUser {
-  users_by_pk(id: 10) {
-    email
-  }
-  assignments_by_pk(id: 10) {
-    userId
-    name
-  }
-}
-query MyQuey {
-  users {
-    name
+
+Insert New User: 
+
+mutation insertNewUser($id: Int = 10) {
+  insert_users_one(object: {email: "test@test.com", name: "test1", password: "password"}) {
     id
-    password
+    email
+    name
   }
 }
+
+Insert New Assignment: 
+mutation insertNewAssignment($userId: Int = 10) {
+  insert_assignments(objects: {userId: $userId, name: "1st Day Hat", helper: "frog", environment: "farm", id: 10}) {
+    returning {
+      environment
+      helper
+      name
+      userId
+    }
+  }
+}
+
+Find Assignment By User: 
+query findAssignmentsByUserId($_eq: Int = 10) {
+  assignments(where: {}) {
+    environment
+    helper
+    name
+    userId
+  }
+}
+

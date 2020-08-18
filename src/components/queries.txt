@@ -1,0 +1,16 @@
+query assignmentsByUser {
+  users_by_pk(id: 10) {
+    email
+  }
+  assignments_by_pk(id: 10) {
+    userId
+    name
+  }
+}
+query MyQuey {
+  users {
+    name
+    id
+    password
+  }
+}

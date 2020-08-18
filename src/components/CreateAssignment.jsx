@@ -2,11 +2,11 @@ import React from 'react';
 import '../styles/App.css';
 
 const CreateAssignment = () => {
-  
+
   return (
     <div className="createAssignment">
-      <h2>Let's Get Started!</h2>
-      <h4>To begin, name your assignment, add an (optional) image, and type out step by step directions!</h4>
+      <h2>Step 1: Create Your Assignment</h2>
+      <h4>Your Teach Helper is going to give step by step directions, so simply fill in your directions below. Feel free to upload a picture of the final project as well!</h4>
       <form>
         <div className="form-group">
           <label for="assignmentName">Assignment Name:</label>

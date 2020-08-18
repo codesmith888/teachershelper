@@ -9,15 +9,15 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <Link to ="/">Home</Link>
-          <Link to ='/CreateAssignment'>New Assignment</Link>
-          <Link to ='/Classroom'>Classroom</Link>
+        <nav class="navbar navbar-expand-lg">
+          <Link to ="/" className="nav-link">Home</Link>
+          <Link to ='/CreateAssignment' className="nav-link">New Assignment</Link>
+          <Link to ='/Classroom' className="nav-link">Classroom</Link>
         </nav>
       </div>
       <div className="App">
-        <h1>Teacher's Helper: </h1>
-        <h4>A Customizable Tool for Distance Learning</h4>
+        <h1 id="title">Teacher's Helper: </h1>
+        <h4 id="subtitle">A Customizable Tool for Distance Learning</h4>
         <Route path="/" exact component={Home}/>
         <Route path="/CreateAssignment" exact component={CreateAssignment}/>
         <Route path="/Classroom" exact component={Classroom}/>

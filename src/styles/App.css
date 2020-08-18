@@ -1,4 +1,42 @@
 body {
   text-align: center;
   color: black;
+
 }
+
+.navbar {
+  background-color: #FCDFCE;
+  width: 100%;
+}
+
+.nav-link {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  color: #8A7D80;
+}
+
+#title {
+  font-family: 'Dosis', sans-serif;
+  color: #8A7D80;
+  font-size: 40px;
+
+}
+
+#subtitle {
+  font-family: 'Dosis', sans-serif;
+  color: #8A7D80;
+  font-size: 28px;
+}
+
+.homeText {
+  font-family: 'Dosis', sans-serif;
+  color: #BEC6C3;
+  font-size: 28px;
+}
+
+#home {
+  background-image: url("/7462.jpg");
+}
+
+
+

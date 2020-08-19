@@ -17,7 +17,7 @@ const Classroom = (props) => {
   let [sixthDirection, setSixthDirection] = useState('')
   let [seventhDirection, setSeventhDirection] = useState('')
   let [eighthDirection, setEighthDirection] = useState('')
- 
+
 
   useEffect(() => {
     console.log(props.location.state.aId)
@@ -49,43 +49,108 @@ const Classroom = (props) => {
 
   const stepOne = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(firstDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = firstDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepTwo = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(secondDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = secondDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepThree = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(thirdDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = thirdDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepFour = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(fourthDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = fourthDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepFive = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(fifthDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = fifthDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepSix = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(sixthDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = sixthDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepSeven = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(seventhDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = seventhDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
 
   const stepEight = () => {
     let speechBubble = document.getElementById("instructionsBubble")
+    var synth = window.speechSynthesis
+    var utterThis = new SpeechSynthesisUtterance(eighthDirection)
+    speechSynthesis.getVoices()
     speechBubble.innerHTML = eighthDirection
+    utterThis.lang='en-US'
+    synth.speak(utterThis)
+    utterThis.onend = () => {
+      synth.cancel()
+    }
   }
+
   return (
     <div id="classroom">
       <img id="classRoomBackground" src={backgroundImage} />
@@ -106,5 +171,5 @@ const Classroom = (props) => {
     </div>
   )
 }
-
+  
 export default Classroom;

@@ -55,16 +55,15 @@ body {
 }
 
 #classroomHelper {
-  padding-bottom: 20vw;
   padding-left: 10vw;
   top: 20vw;
   left: 30vw;
+  padding-bottom: 0vw;
   position: absolute;
 }
 
 #instructionsBubble {
   margin-left: 40%;
-  margin-bottom: 35%;
   margin-right: 50%;
 }
 
@@ -82,3 +81,13 @@ body {
   height: 100%;
 }
 
+.numbers {
+  justify-content: center;
+  text-align: center;
+  position: block;
+}
+
+#numberEight {
+  margin-left: 100px;
+  margin-bottom: 100px;
+}

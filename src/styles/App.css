@@ -48,3 +48,37 @@ body {
   height: 200px;
 }
 
+#instructionsText {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  color: #8A7D80;
+}
+
+#classroomHelper {
+  padding-bottom: 20vw;
+  padding-left: 10vw;
+  top: 20vw;
+  left: 30vw;
+  position: absolute;
+}
+
+#instructionsBubble {
+  margin-left: 40%;
+  margin-bottom: 35%;
+  margin-right: 50%;
+}
+
+.number {
+  width: 200px;
+  height: 200px;
+}
+
+#classroomBackground {
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+

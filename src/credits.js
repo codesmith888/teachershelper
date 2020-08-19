@@ -18,6 +18,7 @@ const credits = () => {
       <li><a href="https://www.freepik.com/vectors/tree">Tree vector created by brgfx - www.freepik.com</a></li>
       <li><a href="https://www.freepik.com/vectors/background">Background vector created by brgfx - www.freepik.com</a></li>
       <li><a href="https://www.freepik.com/photos/background">Background photo created by jcomp - www.freepik.com</a></li>
+      <li><a href="https://www.freepik.com/vectors/car">Car vector created by freepik - www.freepik.com</a></li>
     </ul>
   )
 } 

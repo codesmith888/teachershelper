@@ -38,5 +38,13 @@ body {
   background-color: #BEC6C3;
 }
 
+.helper {
+  width: 200px;
+  height: 200px;
+}
 
+.environment {
+  width: 200px;
+  height: 200px;
+}
 

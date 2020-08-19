@@ -10,24 +10,23 @@ mutation insertNewUser($id: Int = 10) {
 }
 
 Insert New Assignment: 
-mutation insertNewAssignment($userId: Int = 10) {
-  insert_assignments(objects: {userId: $userId, name: "1st Day Hat", helper: "frog", environment: "farm", id: 10}) {
+mutation addNewAssignment($name: String = "") {
+  insert_assignments(objects: {name: $name}) {
     returning {
-      environment
-      helper
+      id
       name
-      userId
     }
   }
 }
 
-Find Assignment By User: 
-query findAssignmentsByUserId($_eq: Int = 10) {
-  assignments(where: {}) {
-    environment
-    helper
-    name
-    userId
+Insert Directions: 
+mutation MyMutation {
+  insert_directions(objects: {assignment_id: 3, instruction: ""}) {
+    returning {
+      instruction
+    }
   }
 }
+
+
 

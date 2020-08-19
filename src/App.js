@@ -4,6 +4,8 @@ import Home from './components/Home';
 import CreateAssignment from './components/CreateAssignment'
 import Classroom from './components/Classroom'
 import Directions from './components/Directions'
+import ChooseHelper from './components/ChooseHelper'
+import ChooseEnvironment from './components/ChooseEnvironment'
 import './styles/App.css';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/CreateAssignment" exact component={CreateAssignment}/>
         <Route path="/Classroom" exact component={Classroom}/>
         <Route path="/Directions" exact component={Directions}/>
+        <Route path="/ChooseHelper" exact component={ChooseHelper} />
+        <Route path="/ChooseEnvironment" exact component={ChooseEnvironment} />
       </div>
     </Router>
     
